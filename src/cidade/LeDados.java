@@ -59,7 +59,7 @@ public class LeDados {
 	public String defineExpectativa(Cidadao pessoa){
 		String retorno = pessoa.getNome() + " ainda deve viver uns ";
 		int total = 0;
-		int ev = 100 - pessoa.getIdade();
+		int ev = EXPECTATIVA - pessoa.getIdade();
 		
 		if (pessoa.getAtividades().size() == 0){
 			total = (int) (pessoa.getIdade() + (0.5 * ev));

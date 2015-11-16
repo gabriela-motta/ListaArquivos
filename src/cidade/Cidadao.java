@@ -1,10 +1,12 @@
 package cidade;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cidadao {
+public class Cidadao implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String nome;
 	private int idade;
 	private List<String> atividades;
